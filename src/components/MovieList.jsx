@@ -33,6 +33,7 @@ function MovieList() {
                 const response = await axios.get(
                     "https://api.themoviedb.org/3/movie/now_playing?api_key=67456ba989bda984bbc528b1ff68d913&language=en-US&page=1"
                 );
+                console.log("Fetched Movies:", response.data.results); 
                 setMovies(response.data.results);
             } catch (error) {
                 console.error("Error fetching movies:", error);

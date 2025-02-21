@@ -9,7 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/movie-app">
       <Header />
       <main className="container my-4">
         <Routes>
